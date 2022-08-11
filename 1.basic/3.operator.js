@@ -16,6 +16,7 @@ console.log(1 + +'2')
 
 //마지막으로 읽은 값을 리턴한다
 console.log(1 || 0, 0 || 1)
+//&&는 처음으로 false인값을 리턴하고 끝냄
 console.log(1 && 0, 0 && 1)
 console.log(1 && 2, 2 && 1)
 
@@ -36,4 +37,19 @@ console.log(d)
 
 //비교연산자
 console.log()
-console.log('2' > 1, '01' == 1)
+console.log('2' > 1, '01' == 1, false == 0, '' == false)
+console.log(true > 1)
+
+// equivalent //true    false
+console.log(1 == '1', 1 != '1')
+
+// identical //false     true
+console.log(1 === '1', 1 !== '1')
+
+console.log('z' > 'a', 'ac' > 'ab', 'bee' > 'be', 'a' > 'A')
+
+console.log(null > 0, null < 0, null >= 0, null == 0)
+console.log(undefined > 0, undefined >= 0, undefined == 0)
+console.log(NaN > 0, NaN >= 0, NaN == 0)
+
+console.log(undefined == undefined, null == null, NaN == NaN)
