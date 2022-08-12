@@ -56,7 +56,7 @@ let argFn = function() {
 myFn(argFn)
 
 let showMsg = function(from, msg='no message') {
-    console.log(`${from - msg}: ${msg}`)
+    console.log(`${from}: ${msg}`)
 }
-showMsg(3, 1)
+showMsg('trinty', 'follow rabbit')
 showMsg('trinty')
