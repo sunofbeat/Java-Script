@@ -12,3 +12,7 @@ let user_name
 //상수 (초기화값 선언해줘야함)
 const x = 1
 x = 2
+
+let y
+y = 1
+y

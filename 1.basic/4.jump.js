@@ -8,7 +8,7 @@ if(0) {console.log('!')}
 if(-1) {console.log('!')}
 
 //삼항연산자
-console.log(true ? 1: 0)
+console.log(true ? 1 : 0)
 
 let val
 

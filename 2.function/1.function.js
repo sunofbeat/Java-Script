@@ -13,7 +13,7 @@ console.log(salute)
 
 //function이 담길거라 변수를 동사로 한다.
 let sayHello = function(user, greeting) {
-    //back tick을 이용한 리터럴을template literal
+    //back tick을 이용한 리터럴을 template literal이라고 한다.
     return `${greeting}, ${user}` 
 }
 

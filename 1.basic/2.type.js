@@ -45,7 +45,7 @@ const fail = false
 
 let val = null
 
-//undefined
+//undefined 값이 할당되지 않음
 let val2
 val2 = undefined
 console.log(val2)
@@ -70,6 +70,7 @@ console.log(typeof val)
 console.log(Number('1'), Number(true))
 //0으로 리턴됨
 console.log(Number(' '), Number(''), Number(null), Number(false))
+//NaN
 console.log(Number('a'), Number(undefined), Number(NaN))
 
 //값이 존재하기때문에 true
