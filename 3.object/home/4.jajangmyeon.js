@@ -28,25 +28,22 @@ const waiter = new Waiter()
 waiter.serving(food.name, chef1.cook)
  */
 
-function Food(name) {
+function Food(taste, name) {
+    this.taste = taste
     this.name = name
 }
 
-function Chef1() {
-    this.cook = foodName => new Food(`달콤한 ${foodName}`)
-}
-
-function Chef2() {
-    this.cook = foodName => new Food(`매운 ${foodName}`)
+function Chef(taste) {
+    this.cook = foodName => new Food(taste, foodName)
 }
 
 function Waiter() {
-    this.serving = food => console.log(food)
+    this.order = (foodName, chef) => chef.cook(foodName)
 }
 
-const chef1 = new Chef1()
-const chef2 = new Chef2()
-const waiter = new Waiter()
+let chef1 = new Chef('달콤한')
+let chef2 = new Chef('매운')
+let waiter = new Waiter()
 
-waiter.serving(chef1.cook('짜장면'))
-waiter.serving(chef2.cook('짜장면'))
+waiter.order('짜장면', chef1)
+waiter.order('짜장면', chef2)
