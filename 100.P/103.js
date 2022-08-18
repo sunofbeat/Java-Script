@@ -22,7 +22,7 @@ let name = 'morpheus'
 function greet() {
     console.log(`I am ${this.name}.`)
 }
-
+    
 greet()
 greet.call(user1)
 greet.call(user2)
