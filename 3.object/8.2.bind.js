@@ -10,7 +10,7 @@ greet()
 
 let fn = greet.bind(user)
 //call과 bind의 차이점:call은 앞에있는 주어function을 콜한다.
-//bind는 주어 function을 리턴
+//bind는 주어 function을 복제한 새로운값을 리턴
 fn()
 
 setTimeout(fn, 100)
