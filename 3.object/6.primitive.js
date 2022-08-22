@@ -44,3 +44,4 @@ console.log(user + 100)
 userStr = JSON.stringify(user)
 console.log(userStr)
 console.log(typeof userStr)
+

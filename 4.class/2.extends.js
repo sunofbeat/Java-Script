@@ -24,6 +24,11 @@ console.log(animal)
 
 //
 class Duck extends Animal {
+    /* 생략되어있음 자동생성
+    consturtor(...args) {
+        super(...args)
+    }
+    */ 
     run(speed) {
         this.speed = speed / 10
         console.log(this.name, this.speed, 'run.')

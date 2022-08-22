@@ -1,4 +1,4 @@
-class User { //sugar syntax
+class User {
     constructor(name) {
         this.name = name
     }
@@ -8,16 +8,12 @@ class User { //sugar syntax
     }
 }
 
-let user = new User('john')//생성자
+let user = new User('john')
 console.log(user.name)
 user.introduce()
 
-//[[isClassConstrutor]]: true
-//User('john') //TypeError: Class constructor User cannot be invoked without 'new'
-
-//
 User = class {
-    name //class field
+    name
     age
 
     constructor(name, age) {
@@ -31,11 +27,10 @@ User = class {
 }
 
 new User('abel', 12).introduce()
-user.introduce() //abel / 12
-console.log(user.name) // abel
-console.log(User.prototype.name) //undefined
+user.introduce()
+console.log(user.name)
+console.log(User.prototype.name)
 
-//
 function makeClass(phrase) {
     return class {
         sayHi() {

@@ -51,7 +51,7 @@ val2 = undefined
 console.log(val2)
 
 let id = Symbol('id')
-console.log(typeof id)
+console.log( id)
 
 val = 1
 val = String(val)
