@@ -100,3 +100,64 @@ for(let key in arr) {
 for(let val of arr) { //of
     console.log(val)
 }
+
+//
+function print(e) {
+    console.log(e)
+}
+
+function print2(e, i) {
+    console.log(`[${i}]: ${e}`)
+}
+
+function print3(e, i, arr) {
+    arr[i] = e.toUpperCase() //원소들을 대문자로 전환함
+}
+
+arr = ['a', 'b']
+
+arr.forEach(print)
+
+arr.forEach(print2)
+console.log(arr)
+
+arr.forEach(print3)
+console.log(arr)
+
+//
+arr = [1, 2, 3]
+let arr2 = arr.map(e => e * 2) //주어배열을 다시 리턴
+console.log(arr, arr2)
+
+//
+let group = {
+    title: 'art',
+    students: ['winston', 'cal', 'maritha'],
+    list() {
+        this.students.forEach(studentName =>
+             console.log(this.title, ':', studentName))
+    }
+}
+
+group.list()
+
+//배열을 -> string으로
+arr = ['hello', 'world', 2]
+let greeting = arr.join()
+console.log(greeting)
+console.log(typeof greeting)
+
+console.log(arr.join('/')) //token간의 구분자를 넣을수있음
+//과제: join()에서 'helloworld2'를 return하라.
+
+console.log(arr.join(''))
+
+//
+arr = [1, 2, 3]
+str = arr.toString()
+console.log(str, '/', typeof str)
+
+//
+str = JSON.stringify(arr)
+console.log(str, '/', typeof str)
+
