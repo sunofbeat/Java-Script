@@ -32,7 +32,7 @@ user = {
     name: 'oscar',
     age: 21
 }
-
+                //entries는 배열로 리턴
 let entries = Object.entries(user)
 console.log(entries)
 

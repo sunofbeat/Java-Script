@@ -33,7 +33,7 @@ new Promise((resolve, reject) =>
     .then(console.log) //완성
     .finally(() => console.log('promise가 생성되었습니다.'))
 
-    new Promise((resolve, reject) =>
+new Promise((resolve, reject) =>
     setTimeout(() => reject(new Error('미완성')), 3000))
     .then(console.log)
     .catch(e => console.log(e.message)) //미완성
